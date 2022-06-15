@@ -1,0 +1,35 @@
+ $stmte = $pdo->prepare("INSERT INTO cliente(nome_completo) VALUES(?)");
+    $stmte -> bindParam(1, $nome_completo, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(cpf) VALUES(?)");
+    $stmte -> bindParam(2, $cpf, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(rg) VALUES(?)");
+    $stmte -> bindParam(3, $rg, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(data_nascimento) VALUES(?)");
+    $stmte -> bindParam(4, $data_nascimento, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(usuario) VALUES(?)");
+    $stmte -> bindParam(5, $usuario, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(logradouro) VALUES(?)");
+    $stmte -> bindParam(6, $logradouro, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+            
+    $stmte = $pdo->prepare("INSERT INTO cliente(numero) VALUES(?)");
+    $stmte -> bindParam(7, $numero, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(complemento) VALUES(?)");
+    $stmte -> bindParam(8, $complemento, PDO::PARAM_STR);
+    $executa = $stmte->execute();
+
+    $stmte = $pdo->prepare("INSERT INTO cliente(bairro) VALUES(?)");
+    $stmte -> bindParam(9, $bairro, PDO::PARAM_STR);
+     $executa = $stmte->execute();
